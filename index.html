@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Loft House</title>
+		<meta
+			name="description"
+			content="Житловий комплекс Loft House - стильні квартири з високими стелями, розвиненою інфраструктурою та сучасними зручностями. Ваш ідеальний будинок в гармонії з природою!"
+		/>
+		<!-- Предзагрузка Шрифтов, Лого, BG-header   -->
+		<link
+			rel="preload"
+			href="./assets/fonts/PlayfairDisplay-Bold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="./assets/fonts/Raleway-Bold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="./assets/fonts/Raleway-Regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="./assets/fonts/RobotoCondensed-Light.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			as="image"
+			imagesrcset="./assets/image/header/header-bg.avif 1x, 
+               ./assets/image/header/header-bg.webp 1x, 
+               ./assets/image/header/header-bg.jpg 1x"
+			fetchpriority="high"
+		/>
+		<link rel="icon" type="image/svg+xml" href="./assets/icons/icon-web.svg" />
+		<link
+			rel="shortcut icon"
+			href="./assets/icons/icon-web.svg"
+			type="image/x-icon"
+		/>
+		<!--  Метаданные, которые определяют, как ссылка на сайт будет выглядеть при репосте в соцсетях или мессенджерах. -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Loft House" />
+		<meta
+			property="og:description"
+			content="Жилой комплекс в историческом центре"
+		/>
+		<meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+		<meta
+			property="og:image"
+			content="http://127.0.0.1:5500/assets/image/header/web-bg.jpg"
+		/>
+		<meta property="og:site_name" content="Loft House" />
+		<meta property="og:locale" content="ru_RU" />
+		<!-- Подключение CSS   -->
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Header -->
+			<header class="header">
+				<div class="container">
+					<div class="header__top animation-down">
+						<a href="#" class="logo">
+							<img
+								src="./assets/icons/logo.svg"
+								fetchpriority="high"
+								alt="logo"
+							/>
+						</a>
+						<nav class="menu">
+							<div class="menu__btn">
+								<span></span>
+							</div>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">Про комплекс</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Район</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Каталог квартир</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Іпотека</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<h1 class="header__title animation-up">
+						Житловий комплекс
+						<br />
+						в історичному центрі
+					</h1>
+					<a href="#" class="header__mouse-icon animation-up">
+						<img
+							src="./assets/icons/header/mouse.svg"
+							alt="header mouse icon"
+						/>
+					</a>
+					<div class="header__footer">
+						<div class="info animation-up">
+							<a href="#map-point" class="info__link">
+								<img
+									src="./assets/icons/header/map.svg"
+									loading="eager"
+									alt="icon map"
+								/>
+								<span>Наб. річка Фонтанка 10-15</span>
+							</a>
+							<a href="tel:380121234567" class="info__link">
+								<img
+									src="./assets/icons/header/phone.svg"
+									loading="eager"
+									alt="icon phone"
+								/>
+								<span>+38 (012) 123-45-67</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Main -->
+			<main>
+				<section class="benefits">
+					<div class="container">
+						<h2 class="benefits__title visually-hidden section__title">
+							Переваги ЖК
+						</h2>
+						<div class="benefits__list animation-up">
+							<div class="benefits__item">
+								<img
+									class="benefits__img"
+									src="./assets/icons/main/bench.svg"
+									loading="eager"
+									alt="bench"
+								/>
+								<p class="benefits__text">Поруч історичні парки та сквери</p>
+							</div>
+							<div class="benefits__item">
+								<img
+									class="benefits__img"
+									src="./assets/icons/main/building.svg"
+									loading="eager"
+									alt="building"
+								/>
+								<p class="benefits__text">Повністю облаштований</p>
+							</div>
+							<div class="benefits__item">
+								<img
+									class="benefits__img"
+									src="./assets/icons/main/fountain.svg"
+									loading="eager"
+									alt="fountain"
+								/>
+								<p class="benefits__text">10 фонтанів на території</p>
+							</div>
+							<div class="benefits__item">
+								<img
+									class="benefits__img"
+									src="./assets/icons/main/bicycle.svg"
+									loading="eager"
+									alt="bicycle"
+								/>
+								<p class="benefits__text">6 км велодоріжок</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="our-apartments">
+					<div class="container">
+						<h2 class="our-apartments__title section__title animation-right">
+							Наші квартири
+						</h2>
+						<div class="our-apartments__cards">
+							<a href="#" class="our-apartments__card animation-right">
+								<picture>
+									<source
+										srcset="./assets/image/main/loft-Olimp.avif"
+										type="image/avif"
+									/>
+									<source
+										srcset="/assets/image/main/loft-Olimp.webp"
+										type="image/webp"
+									/>
+									<img
+										class="our-apartments__img"
+										src="./assets/image/main/loft-Olimp.jpg"
+										loading="lazy"
+										alt="loft Olimp"
+									/>
+								</picture>
+								<p class="our-apartments__text">Пентхаус "Loft Олімп"</p>
+							</a>
+							<a href="#" class="our-apartments__card animation-left">
+								<picture>
+									<source
+										srcset="./assets/image/main/nice-loft.avif"
+										type="image/avif"
+									/>
+									<source
+										srcset="./assets/image/main/nice-loft.webp"
+										type="image/webp"
+									/>
+									<img
+										class="our-apartments__img"
+										src="./assets/image/main/nice-loft.jpg"
+										loading="lazy"
+										alt="nice loft"
+									/>
+								</picture>
+								<p class="our-apartments__text">Апартаменти "Nice Loft"</p>
+							</a>
+							<a href="#" class="our-apartments__card animation-right">
+								<picture>
+									<source
+										srcset="./assets/image/main/loft-studio.avif"
+										type="image/avif"
+									/>
+									<source
+										srcset="./assets/image/main/loft-studio.webp"
+										type="image/webp"
+									/>
+									<img
+										class="our-apartments__img"
+										src="./assets/image/main/loft-studio.jpg"
+										loading="lazy"
+										alt="loft studio"
+									/>
+								</picture>
+								<p class="our-apartments__text">Апартаменти "Loft Studio"</p>
+							</a>
+							<a href="#" class="our-apartments__card animation-left">
+								<picture>
+									<source
+										srcset="./assets/image/main/loft-prestige.avif"
+										type="image/avif"
+									/>
+									<source
+										srcset="./assets/image/main/loft-prestige.webp"
+										type="image/webp"
+									/>
+									<img
+										class="our-apartments__img"
+										src="./assets/image/main/loft-prestige.jpg"
+										loading="lazy"
+										alt="loft prestige"
+									/>
+								</picture>
+								<p class="our-apartments__text">Loft квартира "Престиж"</p>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="watch">
+					<div class="container">
+						<h2 class="watch__title section__title animation-right">
+							Бажаєте подивитись?
+						</h2>
+						<div class="watch__body animation-up">
+							<div class="watch__info">
+								<p class="watch__text">
+									ЖК LoftHouse - це проект бізнес-класу, розташований в центр
+									міста, на Наб. річки Фонтанки 10-15. Комплекс пропонує своїм
+									мешканцям квартири площею від 40 до 170 кв. м. У будівлі буде
+									три секції, в яких розміститься лише 56 квартир.
+								</p>
+							</div>
+							<form class="form" action="#" method="POST">
+								<input
+									class="form__input"
+									type="text"
+									placeholder="Ваше ім'я"
+									autocomplete="name"
+									required
+								/>
+								<input
+									class="form__input"
+									data-tel-input
+									type="tel"
+									placeholder="Ваш телефон"
+									autocomplete="tel"
+									required
+								/>
+								<p class="form__text">
+									*Ми нікому не передаємо ваші дані. І не зберігаємо ваш номер у
+									основу.
+								</p>
+								<button type="submit">Подивитись район</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section class="video">
+					<div class="container">
+						<h2 class="video__title visually-hidden section__title">
+							Відео про ЖК
+						</h2>
+						<a
+							href="https://youtu.be/mxcxR243FLM?si=Uravecn1P2HCIBxs"
+							class="video__link animation-zoom"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<picture>
+								<source
+									srcset="./assets/image/main/video-bg.avif"
+									type="image/avif"
+								/>
+								<source
+									srcset="./assets/image/main/video-bg.webp"
+									type="image/webp"
+								/>
+								<img
+									class="video__img"
+									src="./assets/image/main/video-bg.jpg"
+									loading="lazy"
+									alt="video background"
+								/>
+							</picture>
+							<div class="video__img-play"></div>
+						</a>
+					</div>
+				</section>
+				<section class="map" id="map-point">
+					<div class="container">
+						<h2 class="map__title section__title">Район на карті</h2>
+						<div class="map-container animation-up">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29700.645216169134!2d73.09207693440798!3d49.80323789505156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4243465ad22d0559%3A0xa90b6be0d244d433!2zMTAwMDAwINCa0LDRgNCw0LPQsNC90LTQsCwg0JrQsNC30LDRhdGB0YLQsNC9!5e1!3m2!1sru!2sua!4v1769456380762!5m2!1sru!2sua"
+								width="100%"
+								height="100%"
+								title="map"
+								defer
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+						</div>
+					</div>
+				</section>
+				<section class="questions">
+					<div class="container">
+						<h2 class="questions__title section__title animation-right">
+							Чи є питання?
+						</h2>
+						<form class="form form--2 animation-up" action="#" method="POST">
+							<p class="form__text">
+								*Ми нікому не передаємо ваші дані. І не зберігаємо ваш номер у
+								основу.
+							</p>
+							<input
+								class="form__input"
+								type="text"
+								placeholder="Ваше ім'я"
+								autocomplete="name"
+								required
+							/>
+							<input
+								class="form__input"
+								data-tel-input
+								type="tel"
+								placeholder="Ваш телефон"
+								autocomplete="tel"
+								required
+							/>
+							<button type="submit">Подивитись район</button>
+						</form>
+					</div>
+				</section>
+			</main>
+			<!-- Footer -->
+			<footer class="footer animation-up">
+				<div class="container">
+					<div class="footer__inner">
+						<a href="#" class="logo">
+							<img src="./assets/icons/logo.svg" alt="logo" />
+						</a>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">Про комплекс</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Район</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Каталог квартир</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Іпотека</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Контакти</a>
+								</li>
+							</ul>
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">Поселення та переїзд</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Сервісні послуги</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Екологічна стійкість</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Інвестиційні можливості</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">Програма лояльності</a>
+								</li>
+							</ul>
+							<div class="footer__contacts-social">
+								<ul class="footer__contacts footer__list">
+									<li class="footer__item">
+										<span>Адрес:</span>
+										<a class="footer__link" href="#">
+											Наб. річки Фонтанки 10-15
+										</a>
+									</li>
+									<li class="footer__item">
+										<span>Телефон:</span>
+										<a class="footer__link" href="tel:380121234567 ">
+											+38 (012) 123-45-67
+										</a>
+									</li>
+									<li class="footer__item">
+										<span>Відділ продажів: 10:00 - 20:00</span>
+									</li>
+									<li class="footer__item">
+										<span>E-mail:</span>
+										<a
+											class="footer__link footer__link--accent"
+											href="mailto:vip@lofthouse.ua"
+										>
+											vip@lofthouse.ua
+										</a>
+									</li>
+								</ul>
+								<div class="footer__social">
+									<a
+										class="footer__youtube footer__icons"
+										href="https://www.youtube.com/"
+										target="_blank"
+										aria-label="Посилання на youtube"
+										rel="noopener noreferrer"
+									></a>
+									<a
+										class="footer__vk footer__icons"
+										href="https://m.vk.com"
+										target="_blank"
+										aria-label="Посилання на vk"
+										rel="noopener noreferrer"
+									></a>
+									<a
+										class="footer__facebook footer__icons"
+										href="https://www.facebook.com"
+										target="_blank"
+										aria-label="Посилання на facebook"
+										rel="noopener noreferrer"
+									></a>
+									<a
+										class="footer__instagram footer__icons"
+										href="https://www.instagram.com/"
+										target="_blank"
+										aria-label="Посилання на instagram"
+										rel="noopener noreferrer"
+									></a>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- javaScript -->
+		<script src="./js/libs/phoneMask/mask.js" defer></script>
+		<script src="./js/libs/phoneMask/mask_list.js" defer></script>
+		<script src="./js/main.js" defer></script>
+	</body>
+</html>

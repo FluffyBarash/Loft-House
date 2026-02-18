@@ -1,0 +1,17 @@
+@use '../utils/variables' as var;
+
+input {
+	width: 100%;
+	font-size: 0.87rem;
+	max-width: 18.21em;
+	padding: 0.85em;
+	color: var.$grey;
+	background-color: rgb(var.$white, 0.2);
+	&::placeholder {
+		color: var.$grey;
+		font-size: 0.87rem;
+		font-weight: 400;
+		line-height: 1.92em;
+		text-align: center;
+	}
+}

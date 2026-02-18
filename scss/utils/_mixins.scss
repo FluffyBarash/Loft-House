@@ -1,0 +1,65 @@
+@use './variables' as var;
+
+@mixin min-max($min-width, $max-width) {
+	min-width: $min-width;
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+@mixin img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+@mixin decorNumber {
+	position: absolute;
+	top: 0;
+	font-size: 25rem;
+	line-height: 1.15;
+	color: rgb(var.$white, 0.02);
+	font-family: var.$font-accent;
+	font-weight: 700;
+	line-height: 1.33em;
+}
+
+@mixin mediaDesktop {
+	@media (max-width: var.$desktop) {
+		@content;
+	}
+}
+
+@mixin mediaDesktopMiddle {
+	@media (max-width: var.$desktop2) {
+		@content;
+	}
+}
+
+@mixin mediaLaptop {
+	@media (max-width: var.$laptop) {
+		@content;
+	}
+}
+
+@mixin mediaTablet {
+	@media (max-width: var.$tablet) {
+		@content;
+	}
+}
+
+@mixin mediaMobile {
+	@media (max-width: var.$mobile) {
+		@content;
+	}
+}
+
+@mixin mediaMobileMini {
+	@media (max-width: var.$mobileMini) {
+		@content;
+	}
+}
+
+@mixin animation {
+	opacity: 0;
+	transition: all 1.5s;
+}

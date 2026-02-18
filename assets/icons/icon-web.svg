@@ -1,0 +1,9 @@
+<svg viewBox="0 0 35 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.000000" height="36.000000" fill="none" customFrame="#000000">
+	<path id="LoftHouse" d="M2.78711 28L2.78711 3.39062L5.8457 3.39062L5.8457 24.9766L16.0059 24.9766L16.0059 28L2.78711 28ZM18.0449 28L18.0449 3.39062L21.1035 3.39062L21.1035 14.1133L24.2676 14.1133L24.2676 17.1016L21.1035 17.1016L21.1035 28L18.0449 28ZM26.0254 17.1016L26.0254 14.1133L29.1543 14.1133L29.1543 3.39062L32.248 3.39062L32.248 28L29.1543 28L29.1543 17.1016L26.0254 17.1016Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+	<style>
+		path { fill: black; }
+		@media (prefers-color-scheme: dark) {
+		path { fill: white; 
+		}
+	</style>
+</svg>

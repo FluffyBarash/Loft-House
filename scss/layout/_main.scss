@@ -1,0 +1,376 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+.benefits {
+	position: relative;
+	max-width: 51.8em;
+	margin: 0 auto;
+	padding-bottom: 7.5em;
+
+	&::after {
+		content: 'II';
+		left: calc(50% + 1.37em);
+		transform: translate(-50%, 0%);
+		@include mix.decorNumber;
+
+		@include mix.mediaLaptop {
+			display: none;
+		}
+	}
+
+	&__list {
+		display: flex;
+		gap: 4.37rem;
+		padding-top: 7.5rem;
+
+		@include mix.mediaTablet {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(200px, 1fr));
+			justify-self: center;
+			padding-top: 2rem;
+		}
+
+		@include mix.mediaMobile {
+			gap: 2.18rem;
+			grid-template-columns: repeat(1, minmax(200px, 1fr));
+		}
+	}
+
+	&__item {
+		max-width: 12.5em;
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-self: center;
+	}
+
+	&__img {
+		max-width: 5em;
+		margin-bottom: 3.12rem;
+
+		@include mix.mediaLaptop {
+			max-width: 3.75em;
+		}
+	}
+
+	&__text {
+		font-family: var.$font-secondary;
+		font-size: 1.25rem;
+		font-weight: 300;
+		line-height: 1.68rem;
+		text-align: center;
+
+		@include mix.mediaLaptop {
+			font-size: 1rem;
+		}
+	}
+
+	@include mix.mediaTablet {
+		padding-bottom: 4rem;
+	}
+}
+
+.our-apartments {
+	position: relative;
+
+	&::before {
+		content: 'III';
+		right: calc(50% + 1.37em);
+		transform: translate(50%, 0%);
+		@include mix.decorNumber;
+
+		@include mix.mediaLaptop {
+			display: none;
+		}
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.87em;
+
+		@include mix.mediaTablet {
+			grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+		}
+	}
+
+	&__card {
+		position: relative;
+		overflow: hidden;
+		width: auto;
+		&::after {
+			content: '';
+			position: absolute;
+			inset: 0.93em;
+			border: 3px double rgb(var.$white, 0.4);
+			transition: all 0.3s ease-in-out;
+			opacity: 0;
+		}
+
+		@media (hover: hover) {
+			&:hover::after {
+				opacity: 1;
+			}
+		}
+
+		@media (hover: hover) {
+			&:hover .our-apartments__img {
+				transform: scale(1.1);
+			}
+		}
+
+		@include mix.mediaTablet {
+			justify-self: center;
+		}
+	}
+
+	&__img {
+		transition: transform 0.3s ease-in-out;
+		background:
+			linear-gradient(
+				180deg,
+				rgba(36, 43, 51, 1) 0%,
+				rgba(36, 43, 51, 0) 0.01%,
+				rgba(36, 43, 51, 1) 100%
+			),
+			rgba(212, 193, 127, 1);
+	}
+
+	&__text {
+		position: absolute;
+		padding: 2em;
+		bottom: 0;
+		font-size: 1.5rem;
+		font-weight: 400;
+		line-height: 1.75rem;
+
+		@include mix.mediaMobile {
+			padding: 1em;
+		}
+
+		@include mix.mediaMobileMini {
+			font-size: 1rem;
+			padding: 1.5em;
+		}
+	}
+}
+
+.watch {
+	display: flex;
+	align-items: center;
+	background-image:
+		linear-gradient(
+			180deg,
+			rgba(36, 43, 51, 1) 10.417%,
+			rgba(36, 43, 51, 0) 50.521%,
+			rgba(36, 43, 51, 1) 90.104%
+		),
+		linear-gradient(rgba(36, 43, 51, 0.9)),
+		image-set(
+			'/assets/image/main/watch-bg.avif' type('image/avif'),
+			'/assets/image/main/watch-bg.webp' type('image/webp'),
+			'/assets/image/main/watch-bg.jpg' type('image/jpg')
+		);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 35em;
+	&__title {
+		margin-bottom: 0.47em;
+	}
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		gap: 1.88em;
+
+		@include mix.mediaLaptop {
+			flex-direction: column;
+		}
+	}
+
+	&__info {
+		max-width: 33.75em;
+	}
+
+	&__text {
+		min-width: none;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5em;
+
+		@include mix.mediaMobile {
+			font-size: 14px;
+		}
+	}
+}
+
+.form {
+	min-width: 33.75em;
+	display: flex;
+	gap: 2.18rem 1.87rem;
+	flex-wrap: wrap;
+
+	&__input {
+		@include mix.mediaLaptop {
+			min-width: 100%;
+		}
+	}
+
+	&__text {
+		display: flex;
+		font-size: 0.81rem;
+		font-weight: 400;
+		line-height: 1.23em;
+		text-align: center;
+		max-width: 19.61em;
+		align-items: center;
+
+		@include mix.mediaLaptop {
+			max-width: unset;
+			text-align: left;
+		}
+	}
+
+	@include mix.mediaLaptop {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		min-width: unset;
+	}
+}
+
+.video {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 11.25em;
+
+	&::after {
+		content: 'IV';
+		left: calc(50% + 1.37em);
+		transform: translate(-50%, 0%);
+		@include mix.decorNumber;
+
+		@include mix.mediaLaptop {
+			display: none;
+		}
+	}
+
+	&__link {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			transition: all 0.3s ease-in-out;
+			background: rgba(36, 43, 51, 0.8);
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				.video__img-play {
+					background-color: saturate(var.$accent, 20%);
+					transform: translate(-50%, -50%) scale(1.2);
+				}
+				&:hover::before {
+					background: rgba(36, 43, 51, 0.7);
+				}
+			}
+		}
+	}
+
+	&__img-play {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		width: 100px;
+		height: 100px;
+		background-color: var.$accent;
+		mask-image: url('../../assets/icons/main/play.svg');
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		transition: all 0.3s ease-in-out;
+
+		@include mix.mediaMobile {
+			width: 60px;
+			height: 60px;
+		}
+	}
+
+	@include mix.mediaTablet {
+		padding-bottom: 5rem;
+	}
+
+	@include mix.mediaMobileMini {
+		padding-bottom: 2rem;
+	}
+}
+
+.map {
+	padding-bottom: 11.25em;
+	position: relative;
+
+	&::before {
+		content: 'V';
+		right: calc(50% + 1.37em);
+		transform: translate(50%, 0%);
+		@include mix.decorNumber;
+
+		@include mix.mediaLaptop {
+			display: none;
+		}
+	}
+
+	&-container {
+		width: 100%;
+		height: 22.5em;
+	}
+
+	@include mix.mediaTablet {
+		padding-bottom: 5rem;
+	}
+}
+
+.questions {
+	display: flex;
+	padding-bottom: 11.25em;
+	&__title {
+		margin-bottom: 1.36em;
+	}
+
+	@include mix.mediaTablet {
+		padding-bottom: 5rem;
+	}
+
+	@include mix.mediaMobileMini {
+		padding-bottom: 2rem;
+	}
+}
+
+.form--2 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	@include mix.mediaDesktopMiddle {
+		grid-template-columns: repeat(1, 1fr);
+		min-width: 750px;
+
+		.form__text {
+			max-width: unset;
+			text-align: left;
+		}
+
+		.form__input {
+			min-width: 100%;
+		}
+	}
+
+	@include mix.mediaTablet {
+		min-width: 90vw;
+	}
+}

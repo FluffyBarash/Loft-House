@@ -1,0 +1,20 @@
+@use '../utils/variables' as var;
+
+button {
+	padding: 0.75em 3.31em;
+	min-width: 15.97em;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.68em;
+	text-align: center;
+	color: white;
+	background-color: var.$accent;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+
+	@media (hover: hover) {
+		&:hover {
+			background-color: saturate(var.$accent, 20%);
+		}
+	}
+}

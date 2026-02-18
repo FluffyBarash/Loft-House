@@ -1,0 +1,106 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins' as mix;
+
+.footer {
+	background-color: var.$footer-bg;
+	padding-top: 3.75em;
+	padding-bottom: 3.75em;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 3.75em;
+	}
+
+	.logo {
+		min-width: 8.37em;
+	}
+
+	&__menu {
+		display: flex;
+		gap: 3.75em;
+		flex-wrap: wrap;
+
+		@include mix.mediaTablet {
+			gap: 2.5em;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.07em;
+		font-size: 0.87rem;
+		font-weight: 400;
+		line-height: 1.14em;
+		letter-spacing: 5%;
+	}
+
+	&__item {
+		display: flex;
+		span {
+			margin-right: 0.5em;
+		}
+	}
+
+	&__link {
+		&--accent {
+			font-weight: 700;
+			color: var.$accent;
+			transition: all 0.3s ease-in-out;
+			@media (hover: hover) {
+				&:hover {
+					color: saturate(var.$accent, 20%);
+				}
+			}
+		}
+	}
+
+	&__contacts-social {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__social {
+		display: flex;
+		max-width: 10em;
+		justify-content: space-between;
+	}
+
+	&__icons {
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		transition: all 0.3s ease-in-out;
+		background-color: var.$white;
+		@media (hover: hover) {
+			&:hover {
+				background-color: var.$accent;
+			}
+		}
+	}
+
+	&__youtube {
+		mask-image: url(../../assets/icons/footer/youtube.svg);
+		width: 30px;
+		height: 20px;
+	}
+
+	&__vk {
+		mask-image: url(../../assets/icons/footer/vk.svg);
+		width: 37px;
+		height: 20px;
+	}
+
+	&__facebook {
+		mask-image: url(../../assets/icons/footer/facebook.svg);
+		width: 21px;
+		height: 20px;
+	}
+
+	&__instagram {
+		mask-image: url(../../assets/icons/footer/instagram.svg);
+		width: 21px;
+		height: 20px;
+	}
+}
