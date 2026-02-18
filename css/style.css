@@ -342,9 +342,9 @@ button {
 }
 
 .header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.979%, rgb(36, 43, 51)), color-stop(51.042%, rgba(45, 52, 60, 0.38)), color-stop(92.188%, rgb(36, 43, 51))), image-set("../../assets/image/header/header-bg.avif" type('image/avif'), "../../assets/image/header/header-bg.webp" type('image/webp'), "../../assets/image/header/header-bg.jpg" type('image/jpg'));
-  background: linear-gradient(180deg, rgb(36, 43, 51) 11.979%, rgba(45, 52, 60, 0.38) 51.042%, rgb(36, 43, 51) 92.188%), -webkit-image-set("../../assets/image/header/header-bg.avif" type('image/avif'), "../../assets/image/header/header-bg.webp" type('image/webp'), "../../assets/image/header/header-bg.jpg" type('image/jpg'));
-  background: linear-gradient(180deg, rgb(36, 43, 51) 11.979%, rgba(45, 52, 60, 0.38) 51.042%, rgb(36, 43, 51) 92.188%), image-set("../../assets/image/header/header-bg.avif" type('image/avif'), "../../assets/image/header/header-bg.webp" type('image/webp'), "../../assets/image/header/header-bg.jpg" type('image/jpg'));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.979%, rgb(36, 43, 51)), color-stop(51.042%, rgba(45, 52, 60, 0.38)), color-stop(92.188%, rgb(36, 43, 51))), image-set("../assets/image/header/header-bg.avif" type('image/avif'), "../assets/image/header/header-bg.webp" type('image/webp'), "../assets/image/header/header-bg.jpg" type('image/jpg'));
+  background: linear-gradient(180deg, rgb(36, 43, 51) 11.979%, rgba(45, 52, 60, 0.38) 51.042%, rgb(36, 43, 51) 92.188%), -webkit-image-set("../assets/image/header/header-bg.avif" type('image/avif'), "../assets/image/header/header-bg.webp" type('image/webp'), "../assets/image/header/header-bg.jpg" type('image/jpg'));
+  background: linear-gradient(180deg, rgb(36, 43, 51) 11.979%, rgba(45, 52, 60, 0.38) 51.042%, rgb(36, 43, 51) 92.188%), image-set("../assets/image/header/header-bg.avif" type('image/avif'), "../assets/image/header/header-bg.webp" type('image/webp'), "../assets/image/header/header-bg.jpg" type('image/jpg'));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -897,8 +897,8 @@ button {
   width: 100px;
   height: 100px;
   background-color: #d4c17f;
-  -webkit-mask-image: url("../../assets/icons/main/play.svg");
-          mask-image: url("../../assets/icons/main/play.svg");
+  -webkit-mask-image: url("../assets/icons/main/play.svg");
+          mask-image: url("../assets/icons/main/play.svg");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-size: contain;
@@ -1099,20 +1099,20 @@ button {
   }
 }
 .footer__youtube {
-  -webkit-mask-image: url(../../assets/icons/footer/youtube.svg);
-          mask-image: url(../../assets/icons/footer/youtube.svg);
+  -webkit-mask-image: url(../assets/icons/footer/youtube.svg);
+          mask-image: url(../assets/icons/footer/youtube.svg);
   width: 30px;
   height: 20px;
 }
 .footer__vk {
-  -webkit-mask-image: url(../../assets/icons/footer/vk.svg);
-          mask-image: url(../../assets/icons/footer/vk.svg);
+  -webkit-mask-image: url(../assets/icons/footer/vk.svg);
+          mask-image: url(../assets/icons/footer/vk.svg);
   width: 37px;
   height: 20px;
 }
 .footer__facebook {
-  -webkit-mask-image: url(../../assets/icons/footer/facebook.svg);
-          mask-image: url(../../assets/icons/footer/facebook.svg);
+  -webkit-mask-image: url(../assets/icons/footer/facebook.svg);
+          mask-image: url(../assets/icons/footer/facebook.svg);
   width: 21px;
   height: 20px;
 }
