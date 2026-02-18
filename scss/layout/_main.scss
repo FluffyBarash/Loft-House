@@ -168,9 +168,9 @@
 		),
 		linear-gradient(rgba(36, 43, 51, 0.9)),
 		image-set(
-			'/assets/image/main/watch-bg.avif' type('image/avif'),
-			'/assets/image/main/watch-bg.webp' type('image/webp'),
-			'/assets/image/main/watch-bg.jpg' type('image/jpg')
+			'../assets/image/main/watch-bg.avif' type('image/avif'),
+			'../assets/image/main/watch-bg.webp' type('image/webp'),
+			'../assets/image/main/watch-bg.jpg' type('image/jpg')
 		);
 	background-repeat: no-repeat;
 	background-position: center;
